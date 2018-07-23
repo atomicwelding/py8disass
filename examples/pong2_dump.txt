@@ -1,0 +1,122 @@
+[OFFSET]   [INSTRUCTION]
+[0X200]    CALL 0x2fc
+[0X202]    LD V11, 0xc
+[0X204]    LD V12, 0x3f
+[0X206]    LD V13, 0xc
+[0X208]    LD I, 0x2ea
+[0X20A]    DRW V10, V11, 0x6
+[0X20C]    DRW V12, V13, 0x6
+[0X20E]    LD V14, 0x0
+[0X210]    CALL 0x2d4
+[0X212]    LD V6, 0x3
+[0X214]    LD V8, 0x2
+[0X216]    LD V0, 0x60
+[0X218]    LD DT, V0
+[0X21A]    LD V0, DT
+[0X21C]    SE V0, 0x0
+[0X21E]    JP 0x21a
+[0X220]    RND V7, 0x17
+[0X222]    ADD V7, 0x8
+[0X224]    LD V9, 0xff
+[0X226]    LD I, 0x2f0
+[0X228]    DRW V6, V7, 0x1
+[0X22A]    LD I, 0x2ea
+[0X22C]    DRW V10, V11, 0x6
+[0X22E]    DRW V12, V13, 0x6
+[0X230]    LD V0, 0x1
+[0X232]    SKNP V0
+[0X234]    ADD V11, 0xfe
+[0X236]    LD V0, 0x4
+[0X238]    SKNP V0
+[0X23A]    ADD V11, 0x2
+[0X23C]    LD V0, 0x1f
+[0X23E]    AND V11, V0
+[0X240]    DRW V10, V11, 0x6
+[0X242]    LD V0, 0xc
+[0X244]    SKNP V0
+[0X246]    ADD V13, 0xfe
+[0X248]    LD V0, 0xd
+[0X24A]    SKNP V0
+[0X24C]    ADD V13, 0x2
+[0X24E]    LD V0, 0x1f
+[0X250]    AND V13, V0
+[0X252]    DRW V12, V13, 0x6
+[0X254]    LD I, 0x2f0
+[0X256]    DRW V6, V7, 0x1
+[0X258]    ADD V6, V8
+[0X25A]    ADD V7, V9
+[0X25C]    LD V0, 0x3f
+[0X25E]    AND V6, V0
+[0X260]    LD V1, 0x1f
+[0X262]    AND V7, V1
+[0X264]    SNE V6, 0x0
+[0X266]    JP 0x278
+[0X268]    SNE V6, 0x3f
+[0X26A]    JP 0x282
+[0X26C]    SNE V7, 0x1f
+[0X26E]    LD V9, 0xff
+[0X270]    SNE V7, 0x0
+[0X272]    LD V9, 0x1
+[0X274]    DRW V6, V7, 0x1
+[0X276]    JP 0x22a
+[0X278]    LD V8, 0x2
+[0X27A]    LD V3, 0x1
+[0X27C]    LD V0, V7
+[0X27E]    SUB V0, V11
+[0X280]    JP 0x28a
+[0X282]    LD V8, 0xfe
+[0X284]    LD V3, 0xa
+[0X286]    LD V0, V7
+[0X288]    SUB V0, V13
+[0X28A]    SE V15, 0x1
+[0X28C]    JP 0x2a2
+[0X28E]    LD V1, 0x2
+[0X290]    SUB V0, V1
+[0X292]    SE V15, 0x1
+[0X294]    JP 0x2ba
+[0X296]    SUB V0, V1
+[0X298]    SE V15, 0x1
+[0X29A]    JP 0x2c8
+[0X29C]    SUB V0, V1
+[0X29E]    SE V15, 0x1
+[0X2A0]    JP 0x2c2
+[0X2A2]    LD V0, 0x20
+[0X2A4]    LD ST, V0
+[0X2A6]    CALL 0x2d4
+[0X2A8]    ADD V14, V3
+[0X2AA]    CALL 0x2d4
+[0X2AC]    LD V6, 0x3e
+[0X2AE]    SE V3, 0x1
+[0X2B0]    LD V6, 0x3
+[0X2B2]    LD V8, 0xfe
+[0X2B4]    SE V3, 0x1
+[0X2B6]    LD V8, 0x2
+[0X2B8]    JP 0x216
+[0X2BA]    ADD V9, 0xff
+[0X2BC]    SNE V9, 0xfe
+[0X2BE]    LD V9, 0xff
+[0X2C0]    JP 0x2c8
+[0X2C2]    ADD V9, 0x1
+[0X2C4]    SNE V9, 0x2
+[0X2C6]    LD V9, 0x1
+[0X2C8]    LD V0, 0x4
+[0X2CA]    LD ST, V0
+[0X2CC]    ADD V6, 0x1
+[0X2CE]    SNE V6, 0x40
+[0X2D0]    ADD V6, 0xfe
+[0X2D2]    JP 0x26c
+[0X2D4]    LD I, 0x2f2
+[0X2D6]    LD _BCD_, V14
+[0X2D8]    LD V2, [I]
+[0X2DA]    LD _CHAR_, V1
+[0X2DC]    LD V4, 0x14
+[0X2DE]    LD V5, 0x2
+[0X2E0]    DRW V4, V5, 0x5
+[0X2E2]    ADD V4, 0x15
+[0X2E4]    LD _CHAR_, V2
+[0X2E6]    DRW V4, V5, 0x5
+[0X2E8]    RET
+[0X2EA]    LD V0, V8
+[0X2EC]    LD V0, V8
+[0X2EE]    LD V0, V8
+[0X2F0]    LD V0, V0

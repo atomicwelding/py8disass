@@ -1,0 +1,243 @@
+[OFFSET]   [INSTRUCTION]
+[0X200]    JP 0x225
+[0X202]    SE V3, V5
+[0X204]    SNE V1, 0x43
+[0X206]    SNE V5, 0x20
+[0X208]    SNE V9, 0x4e
+[0X20A]    SE V6, V4
+[0X20C]    SNE V4, 0x45
+[0X20E]    SE V2, V5
+[0X210]    CALL 0x30
+[0X212]    CALL 0xe39
+[0X214]    SE V1, 0x20
+[0X216]    SNE V2, 0x79
+[0X218]    CALL 0x44
+[0X21A]    LD V1, 0x76
+[0X21C]    LD V9, 0x64
+[0X21E]    CALL 0x57
+[0X220]    SNE V9, 0x4e
+[0X222]    SE V4, V4
+[0X224]    SE V2, V6
+[0X226]    SYS 0x61
+[0X228]    SYS 0x62
+[0X22A]    SYS 0x8a3
+[0X22C]    DRW V13, V13, 0x0
+[0X22E]    JP 0x871
+[0X230]    SYS 0x8f2
+[0X232]    JP 0xe31
+[0X234]    CALL 0x12
+[0X236]    CALL 0xd70
+[0X238]    SYS 0x861
+[0X23A]    SYS 0x30
+[0X23C]    SNE V0, 0x12
+[0X23E]    CALL 0xd69
+[0X240]    SYS 0x56c
+[0X242]    JP 0x56e
+[0X244]    SYS 0x23
+[0X246]    SNE V1, V6
+[0X248]    SYS 0xaf0
+[0X24A]    JP 0x5f0
+[0X24C]    SYS 0x730
+[0X24E]    SYS 0x12
+[0X250]    SNE V11, 0x23
+[0X252]    SNE V1, V7
+[0X254]    SYS 0x112
+[0X256]    SNE V5, 0x66
+[0X258]    SYS 0x68
+[0X25A]    JP 0xc69
+[0X25C]    SYS 0x6a
+[0X25E]    SYS 0x46b
+[0X260]    SYS 0xa6c
+[0X262]    SYS 0x46d
+[0X264]    SE V12, 0x6e
+[0X266]    SYS 0xf00
+[0X268]    0xe023
+[0X26A]    ADD V5, 0x23
+[0X26C]    SE V1, V15
+[0X26E]    JP 0x560
+[0X270]    CLS
+[0X272]    SNE V14, V1
+[0X274]    ADD V13, 0x23
+[0X276]    ADD V5, 0x38
+[0X278]    SYS 0x78
+[0X27A]    0xff23
+[0X27C]    ADD V5, 0x60
+[0X27E]    CLS
+[0X280]    SNE V14, V1
+[0X282]    XOR V11, V2
+[0X284]    ADD V5, 0x38
+[0X286]    SE V9, 0x78
+[0X288]    SYS 0x123
+[0X28A]    ADD V5, 0x36
+[0X28C]    SYS 0x12
+[0X28E]    SNE V15, V6
+[0X290]    CLS
+[0X292]    SNE V14, V1
+[0X294]    0xe966
+[0X296]    SYS 0x165
+[0X298]    JP 0xb84
+[0X29A]    XOR V0, V10
+[0X29C]    DRW V9, V13, 0x4
+[0X29E]    SE V1, V10
+[0X2A0]    DRW V9, V13, 0x4
+[0X2A2]    SE V1, V7
+[0X2A4]    0xff35
+[0X2A6]    0xff12
+[0X2A8]    LD I, 0xd66
+[0X2AA]    SYS 0x12
+[0X2AC]    0xe9d4
+[0X2AE]    SE V1, V3
+[0X2B0]    SYS 0x112
+[0X2B2]    0xe9d4
+[0X2B4]    SE V1, V6
+[0X2B6]    SYS 0x83
+[0X2B8]    SNE V0, 0x73
+[0X2BA]    SYS 0x383
+[0X2BC]    LD V0, 0x562
+[0X2BE]    0xf883
+[0X2C0]    CALL 0x262
+[0X2C2]    SYS 0x833
+[0X2C4]    SYS 0x12
+[0X2C6]    RND V9, 0x23
+[0X2C8]    ADD V13, 0x82
+[0X2CA]    SYS 0x643
+[0X2CC]    SYS 0x812
+[0X2CE]    DRW V3, V3, 0x3
+[0X2D0]    JP 0x12
+[0X2D2]    DRW V5, V2, 0x3
+[0X2D4]    ADD V13, 0x82
+[0X2D6]    SYS 0x633
+[0X2D8]    JP 0x812
+[0X2DA]    DRW V13, V2, 0x3
+[0X2DC]    ADD V13, 0x82
+[0X2DE]    SYS 0x643
+[0X2E0]    CALL 0x12
+[0X2E2]    0xe733
+[0X2E4]    CALL 0x812
+[0X2E6]    0xe923
+[0X2E8]    ADD V13, 0x3e
+[0X2EA]    SYS 0x13
+[0X2EC]    SYS 0x779
+[0X2EE]    SYS 0x649
+[0X2F0]    JP 0x869
+[0X2F2]    SYS 0x6a
+[0X2F4]    SYS 0x46b
+[0X2F6]    SYS 0xa6c
+[0X2F8]    SYS 0x47d
+[0X2FA]    0xf46e
+[0X2FC]    SYS 0xf00
+[0X2FE]    0xe023
+[0X300]    SE V1, V2
+[0X302]    ADD V5, 0xfd
+[0X304]    JP 0x512
+[0X306]    LD V15, 0xf7
+[0X308]    SYS 0x737
+[0X30A]    SYS 0x12
+[0X30C]    LD V15, 0xfd
+[0X30E]    JP 0x523
+[0X310]    SE V1, V8
+[0X312]    LD I, 0x43b
+[0X314]    JP 0x213
+[0X316]    JP 0xb7c
+[0X318]    SYS 0x26a
+[0X31A]    0xfc3b
+[0X31C]    SYS 0x213
+[0X31E]    CALL 0x37c
+[0X320]    SYS 0x26a
+[0X322]    SYS 0x423
+[0X324]    SE V1, V3
+[0X326]    JP 0x812
+[0X328]    LD V15, 0x0
+[0X32A]    0xe0a4
+[0X32C]    DRW V13, V6, 0x0
+[0X32E]    JP 0x461
+[0X330]    SYS 0x862
+[0X332]    SYS 0xfd0
+[0X334]    JP 0xf70
+[0X336]    SYS 0x8f2
+[0X338]    JP 0xe30
+[0X33A]    CALL 0xc13
+[0X33C]    SE V3, 0x60
+[0X33E]    0xfff0
+[0X340]    JP 0x5f0
+[0X342]    SYS 0x730
+[0X344]    SYS 0x13
+[0X346]    SNE V1, 0xf0
+[0X348]    SYS 0xa00
+[0X34A]    0xe0a7
+[0X34C]    SYS 0x6fe
+[0X34E]    LD V5, 0x12
+[0X350]    CALL 0x5a3
+[0X352]    RND V1, 0xf9
+[0X354]    JP 0xe61
+[0X356]    SYS 0x823
+[0X358]    LD V9, 0x81
+[0X35A]    SYS 0x623
+[0X35C]    LD V9, 0x81
+[0X35E]    SYS 0x623
+[0X360]    LD V9, 0x81
+[0X362]    SYS 0x623
+[0X364]    LD V9, 0x7b
+[0X366]    DRW V0, V0, 0x0
+[0X368]    0xee80
+[0X36A]    0xe080
+[0X36C]    JP 0x230
+[0X36E]    SYS 0xdb
+[0X370]    RND V6, 0x7b
+[0X372]    SYS 0xc00
+[0X374]    0xeea3
+[0X376]    DRW V9, V6, 0x0
+[0X378]    JP 0xcd8
+[0X37A]    SYS 0x400
+[0X37C]    0xee23
+[0X37E]    SE V1, V8
+[0X380]    CALL 0x323
+[0X382]    SE V1, V6
+[0X384]    SYS 0x5f0
+[0X386]    JP 0x8f0
+[0X388]    JP 0x5f0
+[0X38A]    SYS 0x730
+[0X38C]    SYS 0x13
+[0X38E]    LD V9, V0
+[0X390]    0xee6a
+[0X392]    SYS 0x8d
+[0X394]    0xe06b
+[0X396]    SYS 0x4e9
+[0X398]    LD I, 0x112
+[0X39A]    SE V7, V10
+[0X39C]    SYS 0xcfd
+[0X39E]    JP 0xef0
+[0X3A0]    LD V5, 0x30
+[0X3A2]    0xff13
+[0X3A4]    LD I, 0xf6a
+[0X3A6]    SYS 0x6b
+[0X3A8]    SYS 0x46d
+[0X3AA]    SYS 0x16e
+[0X3AC]    SYS 0x113
+[0X3AE]    SNE V7, V10
+[0X3B0]    SYS 0xaf0
+[0X3B2]    JP 0xedb
+[0X3B4]    RND V6, 0x7b
+[0X3B6]    SYS 0x87d
+[0X3B8]    SYS 0x17a
+[0X3BA]    SYS 0x13a
+[0X3BC]    SYS 0x713
+[0X3BE]    SNE V7, V0
+[0X3C0]    0xee3c
+[0X3C2]    ADD V14, 0xff
+[0X3C4]    0xff99
+[0X3C6]    SNE V9, V7
+[0X3C8]    0xffff
+[0X3CA]    CALL 0x424
+[0X3CC]    0xe77e
+[0X3CE]    0xff3c
+[0X3D0]    SE V12, 0x7e
+[0X3D2]    DRW V11, V8, 0x1
+[0X3D4]    SNE V2, 0x3c
+[0X3D6]    ADD V14, 0xff
+[0X3D8]    DRW V11, V1, 0x0
+[0X3DA]    SE V8, 0x7c
+[0X3DC]    0xfe00
+[0X3DE]    SYS 0x7f
+[0X3E0]    SYS 0x3f
+[0X3E2]    SYS 0x7f

@@ -1,0 +1,100 @@
+[OFFSET]   [INSTRUCTION]
+[0X200]    LD I, 0x2b4
+[0X202]    CALL 0x3e6
+[0X204]    CALL 0x2b6
+[0X206]    ADD V0, 0x1
+[0X208]    DRW V0, V1, 0x1
+[0X20A]    SE V0, 0x25
+[0X20C]    JP 0x206
+[0X20E]    ADD V1, 0xff
+[0X210]    DRW V0, V1, 0x1
+[0X212]    LD V0, 0x1a
+[0X214]    DRW V0, V1, 0x1
+[0X216]    LD V0, 0x25
+[0X218]    SE V1, 0x0
+[0X21A]    JP 0x20e
+[0X21C]    RND V4, 0x70
+[0X21E]    SNE V4, 0x70
+[0X220]    JP 0x21c
+[0X222]    RND V3, 0x3
+[0X224]    LD V0, 0x1e
+[0X226]    LD V1, 0x3
+[0X228]    CALL 0x25c
+[0X22A]    LD DT, V5
+[0X22C]    DRW V0, V1, 0x4
+[0X22E]    SE V15, 0x1
+[0X230]    JP 0x23c
+[0X232]    DRW V0, V1, 0x4
+[0X234]    ADD V1, 0xff
+[0X236]    DRW V0, V1, 0x4
+[0X238]    CALL 0x340
+[0X23A]    JP 0x21c
+[0X23C]    SKNP V7
+[0X23E]    CALL 0x272
+[0X240]    SKNP V8
+[0X242]    CALL 0x284
+[0X244]    SKNP V9
+[0X246]    CALL 0x296
+[0X248]    SKP V2
+[0X24A]    JP 0x250
+[0X24C]    LD V6, 0x0
+[0X24E]    LD DT, V6
+[0X250]    LD V6, DT
+[0X252]    SE V6, 0x0
+[0X254]    JP 0x23c
+[0X256]    DRW V0, V1, 0x4
+[0X258]    ADD V1, 0x1
+[0X25A]    JP 0x22a
+[0X25C]    LD I, 0x2c4
+[0X25E]    ADD I, V4
+[0X260]    LD V6, 0x0
+[0X262]    SNE V3, 0x1
+[0X264]    LD V6, 0x4
+[0X266]    SNE V3, 0x2
+[0X268]    LD V6, 0x8
+[0X26A]    SNE V3, 0x3
+[0X26C]    LD V6, 0xc
+[0X26E]    ADD I, V6
+[0X270]    RET
+[0X272]    DRW V0, V1, 0x4
+[0X274]    ADD V0, 0xff
+[0X276]    CALL 0x334
+[0X278]    SE V15, 0x1
+[0X27A]    RET
+[0X27C]    DRW V0, V1, 0x4
+[0X27E]    ADD V0, 0x1
+[0X280]    CALL 0x334
+[0X282]    RET
+[0X284]    DRW V0, V1, 0x4
+[0X286]    ADD V0, 0x1
+[0X288]    CALL 0x334
+[0X28A]    SE V15, 0x1
+[0X28C]    RET
+[0X28E]    DRW V0, V1, 0x4
+[0X290]    ADD V0, 0xff
+[0X292]    CALL 0x334
+[0X294]    RET
+[0X296]    DRW V0, V1, 0x4
+[0X298]    ADD V3, 0x1
+[0X29A]    SNE V3, 0x4
+[0X29C]    LD V3, 0x0
+[0X29E]    CALL 0x25c
+[0X2A0]    CALL 0x334
+[0X2A2]    SE V15, 0x1
+[0X2A4]    RET
+[0X2A6]    DRW V0, V1, 0x4
+[0X2A8]    ADD V3, 0xff
+[0X2AA]    SNE V3, 0xff
+[0X2AC]    LD V3, 0x3
+[0X2AE]    CALL 0x25c
+[0X2B0]    CALL 0x334
+[0X2B2]    RET
+[0X2B4]    LD V0, V0
+[0X2B6]    LD V7, 0x5
+[0X2B8]    LD V8, 0x6
+[0X2BA]    LD V9, 0x4
+[0X2BC]    LD V1, 0x1f
+[0X2BE]    LD V5, 0x10
+[0X2C0]    LD V2, 0x7
+[0X2C2]    RET
+[0X2C4]    SNE V0, 0xe0
